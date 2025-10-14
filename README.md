@@ -127,8 +127,7 @@ SiteDaTela/
 
 - Uso de **CSS Grid e Flexbox** para layout responsivo.  
 - Imagens com `object-fit: cover` para proporções consistentes.  
-- Estrutura HTML5 semântica melhora **SEO** e **acessibilidade**.  
-- Design responsivo para telas grandes e dispositivos móveis.  
+- Estrutura HTML5 semântica melhora **SEO** e **acessibilidade**.   
 
 ---
 
