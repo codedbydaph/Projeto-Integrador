@@ -149,7 +149,6 @@ SiteDaTela/
 - Hierarquia correta de títulos (`h1`, `h2`, `h3`)  
 - Foco visível em links e botões  
 - Contraste de cores verificado  
-- Meta tags básicas de SEO (`title`, `description`, `og:image`)  
 
 ---
 
