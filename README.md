@@ -113,13 +113,13 @@ SiteDaTela/
 
 ## 📅 Etapas Realizadas
 
-| Etapa | Descrição | Data | Responsável |
-|-------|------------|------|--------------|
-| Definição do tema e escopo | Escolha do negócio e objetivos | dd/mm | Equipe |
-| Criação do protótipo no Figma | Estrutura visual e justificativas | dd/mm | UX Designer |
-| Desenvolvimento HTML/CSS | Estruturação e estilização | dd/mm | Dev Front-end |
-| Versionamento no GitHub | Controle de versões e commits | dd/mm | Dev Front-end |
-| Publicação no GitHub Pages | Deploy final do site | dd/mm | Equipe |
+| Etapa | Descrição | Data |
+|-------|------------|------|
+| Definição do tema e escopo | Escolha do negócio e objetivos | 08/10 |
+| Criação do protótipo no Figma | Estrutura visual e justificativas | 08/10 |
+| Desenvolvimento HTML/CSS | Estruturação e estilização | 12/10 |
+| Versionamento no GitHub | Controle de versões e commits | 14/10 |
+| Publicação no GitHub Pages | Deploy final do site | 14/10 |
 
 ---
 
@@ -139,13 +139,12 @@ SiteDaTela/
 | Cores | Verdes, branco e cinza | Associadas à natureza, estabilidade e segurança |
 | Tipografia | Poppins | Moderna e legível |
 | Layout | Grid 2 colunas | Clareza e equilíbrio visual |
-| Navbar fixa | Sim | Navegação constante e usabilidade |
 | Cards | Bordas arredondadas e sombra | Hierarquia e modernidade |
 | Ícones | Minimalistas | Comunicação imediata |
 
 ---
 
-## ♿ Acessibilidade e SEO
+## ♿ Acessibilidade
 
 - Imagens com `alt` descritivo  
 - Hierarquia correta de títulos (`h1`, `h2`, `h3`)  
@@ -157,12 +156,10 @@ SiteDaTela/
 
 ## ✅ Próximos Passos
 
-- [ ] Revisar responsividade em telas menores (até 480px)  
-- [ ] Implementar formulário funcional (Formspree ou Netlify Forms)  
-- [ ] Otimizar imagens para `.webp` e `lazy-loading`  
-- [ ] Adicionar favicon e meta tags sociais  
+- [ ] Revisar responsividade em telas menores 
+- [ ] Implementar formulário funcional 
 - [ ] Criar seção “Portfólio de Obras” com fotos reais  
-- [ ] Testar acessibilidade (leitores de tela e navegação por teclado)
+- [ ] Testar acessibilidade
 
 ---
 
@@ -171,7 +168,7 @@ SiteDaTela/
 O projeto **Tela — Construção & Reforma** cumpre os requisitos da primeira etapa do Projeto Integrador:  
 planejamento visual, prototipagem detalhada, justificativas de design, desenvolvimento HTML/CSS, versionamento no GitHub e publicação.  
 
-O resultado é um **site moderno, responsivo e vendável**, que fortalece a marca e gera oportunidades reais para o negócio.
+O resultado é um **site moderno e vendável**, que fortalece a marca e gera oportunidades reais para o negócio.
 
 ---
 
