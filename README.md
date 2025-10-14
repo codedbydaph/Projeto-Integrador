@@ -69,22 +69,28 @@ Ele atua como **vitrine digital**, transmitindo confiança e credibilidade, alé
 O site foi construído com **HTML5 semântico** e **CSS3**, mantendo organização, legibilidade e boas práticas.  
 Cada página representa uma seção essencial do negócio.
 
-### Estrutura Final de Pastas
+### 📂 Estrutura do projeto
+<pre>
 SiteDaTela/
-├── index.html
-├── sobre.html
-├── contato.html
+├── index.html        # Página inicial (estrutura principal do site)
+├── sobre.html        # Página "Sobre a empresa"
+├── contato.html      # Página de contato e formulário
+│
 ├── css/
-│   └── style.css
+│   └── style.css     # Estilos, layout e responsividade
+│
 ├── js/
-│   └── script.js
-├── img/
+│   └── script.js     # Interações e efeitos (scroll, menu, etc.)
+│
+├── img/              # Imagens e ícones utilizados no site
 │   ├── LogoOriginal.png
 │   ├── servico1.png
 │   ├── servico2.png
 │   ├── servico3.png
 │   └── TelaWhite.png
-└── README.md
+│
+└── README.md         # Documentação do projeto
+</pre>
 
 ### Tecnologias Utilizadas
 - **HTML5** — estrutura semântica  
