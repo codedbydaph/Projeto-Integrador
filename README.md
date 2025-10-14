@@ -77,7 +77,7 @@ SiteDaTela/
 ├── contato.html      # Página de contato e formulário
 │
 ├── css/
-│   └── style.css     # Estilos, layout e responsividade
+│   └── style.css     # Estilos e layout 
 │
 ├── js/
 │   └── script.js     # Interações e efeitos (scroll, menu, etc.)
