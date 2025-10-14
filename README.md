@@ -112,7 +112,7 @@ SiteDaTela/
 3. Repositório criado e conectado ao GitHub  
 4. Publicado via **GitHub Pages**  
 5. Link do site:  
-   🔗 *[https://seuusuario.github.io/tela]([https://seuusuario.github.io/tela](https://codedbydaph.github.io/Projeto-Integrador))
+   🔗 https://seuusuario.github.io/tela](https://codedbydaph.github.io/Projeto-Integrador
 
 ---
 
