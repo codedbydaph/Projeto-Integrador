@@ -45,7 +45,7 @@ Ele atua como **vitrine digital**, transmitindo confiança e credibilidade, alé
 - **Verde Claro (#10bc2a):** Energia e vitalidade.  
 - **Branco e Cinza Neutro:** Equilíbrio e legibilidade.
 
-> A paleta foi escolhida com base na **psicologia das cores**, associando tons de verde à segurança e ao crescimento — ideais para o setor da construção.
+> A paleta foi escolhida com base na **psicologia das cores**, associando tons de verde à segurança e ao crescimento, ideais para o setor da construção.
 
 ### **Tipografia**
 - **Poppins (Google Fonts):** Limpa, moderna e de alta legibilidade.  
@@ -71,31 +71,20 @@ Cada página representa uma seção essencial do negócio.
 
 ### Estrutura Final de Pastas
 SiteDaTela/
-│
-├── index.html          ← página inicial
-├── sobre.html          ← sobre a empresa
-├── contato.html        ← formulário e dados de contato
-│
+├── index.html
+├── sobre.html
+├── contato.html
 ├── css/
-│   └── style.css       ← folha de estilo principal
-│
+│   └── style.css
+├── js/
+│   └── script.js
 ├── img/
-│   ├── icon.png        ← logo da navbar
-│   ├── banner.jpg      ← imagem principal (home)
-│   ├── sobre1.png
-│   ├── sobre2.png
-│   ├── sobre3.png
+│   ├── LogoOriginal.png
 │   ├── servico1.png
 │   ├── servico2.png
 │   ├── servico3.png
-│   ├── cliente1.jpg
-│   ├── cliente2.jpg
-│   └── cliente3.jpg
-│
-├── README.md           ← documentação do projeto
-└── assets/
-    ├── favicon.ico     ← ícone do site (opcional)
-    └── fonts/          ← pasta para fontes locais (se houver)
+│   └── TelaWhite.png
+└── README.md
 
 ### Tecnologias Utilizadas
 - **HTML5** — estrutura semântica  
