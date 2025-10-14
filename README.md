@@ -54,7 +54,7 @@ Ele atua como **vitrine digital**, transmitindo confiança e credibilidade, alé
 
 ### **Layout**
 - Estrutura em **grid de duas colunas** para seções principais (imagem + texto).  
-- **Navbar fixa** com sombra para navegação constante.  
+- **Navbar padronizada** com sombra.  
 - **Cards** com bordas arredondadas e sombra suave, criando hierarquia e destaque.  
 - Espaçamentos amplos e alinhamentos consistentes, reforçando a clareza visual.
 
