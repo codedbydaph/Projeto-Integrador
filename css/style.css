@@ -65,9 +65,105 @@ header{
 }
 
 /* home da silva */
-#img1{     
-    width: 100%;
+        
+.carousel{
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
+.slides{
+  display: flex;
+  transition: transform .5s ease;
+}
+.slides input{
+  display: none;
+}
+.frame{
+  position: relative;
+  flex: 0 0 100%;  
+}
+.frame img{
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+#btnOrcamento {
+  border: none;
+  color: var(--branco);
+  cursor: pointer;
+  position: absolute;
+  bottom: 140px;                 
+  right: 150px;                   
+  background-color: var(--verdeclaro);
+  padding: 16px 32px;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#btnOrcamento:hover {
+  transform: translateY(-5px);
+  background-color: var(--verdemusgo);
+}
+.manual-navigation{
+  width: 100%;
+  position: absolute;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid var(--branco);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 10px;
+}
+.manual-btn:hover{
+  background-color: var(--branco);
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -100%;
+}
+#radio3:checked ~ .first{
+  margin-left: -200%;
+}
+.navigation div{
+  border: 2px solid var(--verdefloresta);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navigation{
+  position: absolute;
+  width: 100%;
+  margin-top: 480px;
+  display: flex;
+  justify-content: center;
+}
+.navigation div:not(:last-child){
+  margin-right: 10px;
+}
+#radio1:checked ~ .navigation .auto_btn1{
+  background-color: var(--branco);
+}
+#radio2:checked ~ .navigation .auto_btn2{
+  background-color: var(--branco);
+}
+#radio3:checked ~ .navigation .auto_btn3{
+  background-color: var(--branco);
+}
+
 .servicos {
   text-align: center;
   padding: 60px 40px 60px;
@@ -115,6 +211,42 @@ header{
   padding: 25px 10px;
   margin: 0;
   border-radius: 0 0 15px 15px;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--verdefloresta);
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; 
+  border-radius: 15px;
+}
+.card-overlay h4 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.card-overlay p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.card:hover .card-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+.card:hover .icons,
+.card:hover h3 {
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .avaliacao{
@@ -271,6 +403,10 @@ button:hover{
   display:grid;
   gap:80px;
 }
+
+.article1::before, .article2::before { pointer-events: none; }
+.sobre img { position: relative; z-index: 2; display: block; }
+
 .article1{
   position:relative;
   display:grid;

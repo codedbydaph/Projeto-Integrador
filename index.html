@@ -25,7 +25,34 @@
 
 <main>
     <section class="carousel">
-        <img src="img/carousel1.jpg" alt="imagem1 do futuro carrossel" id="img1">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="frame first">
+                <img src="./img/HOMEcarrossel/Frame 1.png" alt="Imagem 1">
+                <button id="btnOrcamento">Solicite seu orçamento</button>
+            </div>
+            <div class="frame second">
+                <img src="./img/HOMEcarrossel/Frame 2.png" alt="Imagem 2">
+            </div>
+            <div class="frame third">
+                <img src="./img/HOMEcarrossel/Frame 3.png" alt="Imagem 3">
+            </div>
+
+            <div class="navigation">
+                <div class="auto_btn1"></div>
+                <div class="auto_btn2"></div>
+                <div class="auto_btn3"></div>
+            </div>
+        </div>
+        
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
     </section>
 
     <section class="servicos">
@@ -36,18 +63,33 @@
                         <img src="img/servico1.png" alt="">
                     </div>
                     <h3>Construção<br>Residencial</h3>
+
+                    <div class="card-overlay">
+                        <h4>Construção Residencial</h4>
+                        <p>Projetos completos, do alicerce ao acabamento, com equipe especializada.</p>
+                    </div>
             </div>
             <div class="card">
                 <div class="icons">
                         <img src="img/servico2.png" alt="">
                     </div>
                     <h3>Reformas &<br>Manutenções</h3>
+
+                    <div class="card-overlay">
+                        <h4>Reformas & Manutenções</h4>
+                        <p>Renovamos e modernizamos seu espaço, cuidando de cada detalhe para garantir praticidade e durabilidade.</p>
+                    </div>
             </div>
             <div class="card">
                 <div class="icons">
                         <img src="img/servico3.png" alt="rolo ">
                     </div>
                     <h3>Pintura &<br>Acabamento</h3>
+
+                    <div class="card-overlay">
+                        <h4>Pintura & Acabamento</h4>
+                        <p>Damos o toque final ao seu ambiente com cores, texturas e acabamentos que refletem estilo e perfeição.</p>
+                    </div>
             </div>
         </div>
     </section>
@@ -57,7 +99,6 @@
         <h2 class="homeH2"> Feedbacks </h2>
 
         <div id="carousel2">
-            <img src="img/arrowE.png" alt="">
             <div class="conteudo">
                 <img src="img/feed1.png" alt="predios">
                 <p class="texto">“Adorei o resultado! A equipe foi super atenciosa e entregou a reforma antes do prazo.”- Juliana M.</p>
@@ -67,35 +108,36 @@
                 <img src="img/feed2.png" alt="predios">
                 <p class="texto">“Contratei para uma obra comercial e fiquei impressionado com a qualidade e profissionalismo”- Ronaldo K.</p>
             </div>
-            <img src="img/arrowD.png" alt="">
         </div>
     </section>
 </main>
 
-<footer>
-    <div class="f-all">
-        <div id="footer_content">
-            <a href="#top"><img src="img/TelaWhite.png" alt="Logo Tela Construção e Reforma" id="footer-logo"></a>
-            <ul class="footer-list">
-                <li><h3>INICIO</h3></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-            <ul class="footer-list">
-                <li><h3>SOCIAIS</h3></li>
-                <li><i class="fa-brands fa-instagram"></i><a href="">Instagram </a> </li>
-            </ul>
-            <ul class="footer-list">
-                <li><h3>CONTATO</h3></li>
-                <li><i class="fa-solid fa-phone"></i><a href="tel:+5561981346770"> (61) 98134-6770 </a></li>
-                <li id="email"><i class="fa-solid fa-envelope"></i><a href="mailto:"> emerson_zampieri@outlook.com</a>
-            </ul>
+    <footer>
+        <div class="f-all">
+            <div id="footer_content">
+                <a href="#top"><img src="img/TelaWhite.png" alt="Logo Tela Construção e Reforma" id="footer-logo"></a>
+                <ul class="footer-list">
+                    <li><h3>INICIO</h3></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><h3>SOCIAIS</h3></li>
+                    <li><i class="fa-brands fa-instagram"></i><a href="">Instagram </a> </li>
+                </ul>
+                <ul class="footer-list">
+                    <li><h3>CONTATO</h3></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:+5561981346770"> (61) 98134-6770 </a></li>
+                    <li id="email"><i class="fa-solid fa-envelope"></i><a href="mailto:"> emerson_zampieri@outlook.com</a>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div id="direitos">
-         <p> &copy; 2025 Tela Construção e Reforma. - Todos os direitos reservados. </p>
-    </div>
-</footer>
+        <div id="direitos">
+            <p> &copy; 2025 Tela Construção e Reforma. - Todos os direitos reservados. </p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js" defer></script>
 </body>
 </html>

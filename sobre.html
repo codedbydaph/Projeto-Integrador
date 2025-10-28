@@ -26,7 +26,7 @@
 <main>
     <section class="sobre">
         <article class="article1">
-            <img src="img/Sobre1.png" alt="homens engenheiros trabalhando">
+            <img id="fotoSobre1" src="img/imagensSOBRE/Sobre1.png" alt="homens engenheiros trabalhando">
                 <div class="direita">
                     <h2>Referência em excelência e inovação na construção civil</h2>
                     <p>Atuamos há mais de 10 anos no setor de construção civil, oferecendo soluções personalizadas para residências e comércios.</p>  
@@ -44,13 +44,13 @@
                     <li>Garantia em todos os serviços realizados</li>
                 </ul>
             </div>
-            <img src="img/Sobre2.png" alt="homem engenheiro trabalhando">
+            <img id="fotoSobre2" src="img/imagensSOBRE/Sobre2.png" alt="homem engenheiro trabalhando">
         </article>
     </section>
 
     <section class="objetivo">
         <p>Nossa missão é transformar sonhos em realidade, por meio de obras planejadas, transparentes e sustentáveis. Acreditamos que cada projeto é único por isso, acompanhamos cada etapa com atenção aos detalhes e foco total no cliente.</p>
-        <img src="img/Sobre3.png" alt="">
+        <img src="img/imagensSOBRE/Sobre3.png" alt="">
     </section>
 
 </main>
@@ -80,5 +80,48 @@
          <p> &copy; 2025 Tela Construção e Reforma. - Todos os direitos reservados. </p>
     </div>
 </footer>
+
+    <script>
+        //desafio 3
+
+        (function () {
+            var img1 = document.querySelector('#fotoSobre1');
+            var img2 = document.querySelector('#fotoSobre2');
+
+            function armar(img){
+            if(!img) return;
+
+            try {
+                var a1 = document.createElement('style');
+                a1.textContent = '.article1::before,.article2::before{pointer-events:none!important;}';
+                document.head.appendChild(a1);
+            } catch(e){}
+
+            img.style.setProperty('position','relative','important');
+            img.style.setProperty('z-index','2','important');
+            img.style.setProperty('display','block','important');
+
+            img.style.setProperty('transition','transform 200ms ease','important');
+            img.style.setProperty('transform','translateY(0px)','important');
+
+            var enter = function(){
+                img.style.setProperty('transform','translateY(-5px)','important');
+            };
+            var leave = function(){
+                img.style.setProperty('transform','translateY(0px)','important');
+                img.style.setProperty('box-shadow','none','important');
+            };
+
+            img.addEventListener('pointerenter', enter);
+            img.addEventListener('pointerleave', leave);
+            img.addEventListener('mouseover', enter);
+            img.addEventListener('mouseout',  leave);
+            }
+
+            armar(img1);
+            armar(img2);
+        })();
+    </script>
+    
 </body>
 </html>
