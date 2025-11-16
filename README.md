@@ -106,6 +106,7 @@ Foram implementadas interações usando **JavaScript Vanilla**:
 - Animação nas imagens da página Sobre (efeito de movimento)
 - Mensagem de confirmação ao enviar o formulário
 - Carregamento dinâmico de header e footer com fetch()
+
 Os scripts foram organizados em:
 - `script.js` → interações gerais
 - `componentes.js` → modularização
