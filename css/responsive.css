@@ -1,0 +1,209 @@
+@media (max-width: 1024px) {
+
+  .navbar {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .carousel,
+  .frame img {
+    height: 400px;
+  }
+
+  #btnOrcamento {
+    right: 40px;
+    bottom: 80px;
+    font-size: 1.4rem;
+    padding: 12px 24px;
+  }
+
+  .sobre {
+    padding: 40px 24px 20px;
+    gap: 48px;
+  }
+
+  .article2 {
+    padding: 40px 24px;
+  }
+
+  .container-form {
+    max-width: 90%;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: auto;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+  }
+
+  .n-logo img {
+    height: 56px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li a,
+  .n-size a,
+  .n-active a {
+    font-size: 0.95rem;
+  }
+
+  .carousel,
+  .frame img {
+    height: 260px;
+  }
+
+  #btnOrcamento {
+    position: static;
+    display: inline-block;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+  .manual-navigation {
+    margin-top: 0;
+  }
+
+  .navigation {
+    margin-top: 220px;
+  }
+
+  .servicos {
+    padding: 40px 16px;
+  }
+
+  .homeH2 {
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .sobre {
+    padding: 32px 16px 20px;
+    gap: 32px;
+  }
+
+  .article1 {
+    grid-template-columns: 1fr;
+  }
+
+  .article1::before {
+    display: none;
+  }
+
+  .article1 .direita h2 {
+    font-size: 1.5rem;
+  }
+
+  .article2 {
+    flex-direction: column-reverse;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .article2 img {
+    width: 100%;
+  }
+
+  .article2::before {
+    display: none;
+  }
+
+  .objetivo {
+    padding: 24px 16px 0;
+  }
+
+  .objetivo p {
+    font-size: 1.1rem;
+  }
+
+  /* empilhar tudo em vez de lado a lado */
+  .container-form {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 24px 16px;
+  }
+
+  .f-content {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .info {
+    padding-right: 0;
+    font-size: 1.4rem;
+  }
+
+  .info ul {
+    padding-top: 1.5rem;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 0 15px; 
+        gap: 0;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .servicos {
+        padding: 0 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .servicos-cards, .card-serv {
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .feedbacks {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .feedbacks-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+}

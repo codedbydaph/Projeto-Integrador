@@ -24,6 +24,12 @@ botao.onclick = function() {
 
 
 //contato enviar
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-});
+const form = document.querySelector("#f");
+const mensagemOk = document.querySelector("#ok");
+
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    mensagemOk.textContent = "Mensagem enviada com sucesso! Em breve entraremos em contato 😊";
+  });
+}

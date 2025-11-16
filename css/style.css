@@ -7,6 +7,14 @@
     --neutro: #ebdddd;
 } 
 
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--verdeclaro);
+  outline-offset: 2px;
+}
+
 *{ margin: 0; list-style: none; text-decoration: none; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
 body{ background-color: var(--branco);}
 
@@ -40,12 +48,6 @@ header{
     width: auto;
 }
 
-.n-active a{
-    color: var(--verdeagua);
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-decoration: underline;
-}
 .n-size a{
     color: black;
     font-weight: 700;
