@@ -74,12 +74,42 @@ Esses arquivos são carregados dinamicamente em todas as páginas utilizando o a
 - Padroniza e centraliza header e footer
 - Segue boas práticas de projetos web
 - Cumpre o requisito central da Parte 2 do Projeto Integrador
+
+## 🌐 2. Acessibilidade
+Melhorias aplicadas com base no checklist da Parte 2:
+- Uso de HTML semântico (`header`, `nav`, `main`, `section`, `article`, `footer`)
+- Apenas um `<h1>` por página, com hierarquia adequada entre títulos
+- Textos alternativos `alt` em imagens relevantes
+- Campos do formulário com `required`
+- Mensagem de envio usando `aria-live="polite"`
+- Foco visível em links e botões para navegação por teclado
+- Navegação funcional com **TAB / Shift+TAB**
+- Contraste revisado para garantir boa legibilidade
+Essas ações tornam o site mais inclusivo e aderente às boas práticas de acessibilidade.
+
+## 📱 3. Responsividade
+O arquivo `responsive.css` foi criado para garantir o comportamento adequado do site em diferentes dispositivos.
+### Melhorias realizadas:
+- Abordagem mobile-first
+- Ajustes para 375px, 768px, 1024px e 1280px
+- Navbar reorganizada e corrigida para evitar quebra de layout
+- Cards reorganizados em layout de coluna no mobile
+- Imagens fluidas (max-width: 100%)
+- Correção de overflow horizontal
+- Seções reorganizadas verticalmente em telas menores
+O site agora se adapta corretamente a celulares, tablets e desktops.
+
+## ⚙️ 4. Interatividade com JavaScript
+Foram implementadas interações usando **JavaScript Vanilla**:
+- Carrossel automático na página inicial
+- Botão “Solicite seu orçamento” levando ao contato
+- Animação nas imagens da página Sobre (efeito de movimento)
+- Mensagem de confirmação ao enviar o formulário
+- Carregamento dinâmico de header e footer com fetch()
+Os scripts foram organizados em:
+- `script.js` → interações gerais
+- `componentes.js` → modularização
   
-## ✔ Desenvolvimento do Projeto
-
-Desenvolvido com **HTML5**, **CSS3** e **JavaScript**, seguindo boas práticas de semântica, responsividade e usabilidade.  
-O JavaScript foi integrado para trazer **interatividade real** ao projeto.
-
 ---
 
 ### 📂 Estrutura final do projeto
@@ -114,13 +144,14 @@ SiteDaTela/
 
 ---
 
-## 🌐 Versionamento e Publicação
+## 🚀 Versionamento e Publicação
 
 1. Projeto inicializado com **Git**  
 2. Commit inicial com estrutura HTML e CSS  
 3. Repositório criado e conectado ao GitHub  
-4. Publicado via **GitHub Pages**  
-5. Link do site:  
+4. Modularização, responsividade e acessibilidade aplicadas
+5. Deploy no **GitHub Pages**
+6. Link do site:  
    🔗 https://codedbydaph.github.io/Projeto-Integrador
 
 ---
@@ -132,9 +163,9 @@ SiteDaTela/
 | Definição do tema e escopo | Escolha do negócio e objetivos | 08/10 |
 | Criação do protótipo no Figma | Estrutura visual e justificativas | 08/10 |
 | Desenvolvimento HTML/CSS | Estruturação e estilização | 12/10 |
-| Adição de JavaScript | Interatividade (Desafios 1 e 3) | 26/10 |
-| Versionamento no GitHub | Controle de versões e commits | 27/10 |
-| Publicação no GitHub Pages | Deploy final do site | 27/10 |
+| Interatividade JS | Carrossel e animações | 26/10 |
+| Modularização | Inclusão dinâmica dos componentes | 15/11 |
+| Publicação no GitHub Pages | Deploy final do site | 16/11 |
   
 ---
 
@@ -152,10 +183,12 @@ SiteDaTela/
 
 ## ♿ Acessibilidade
 
-- Imagens com `alt` descritivo  
+- Imagens com `alt` descritivo
+- Navegação por teclado
 - Hierarquia correta de títulos (`h1`, `h2`, `h3`)  
 - Foco visível em links e botões  
-- Contraste de cores verificado  
+- Contraste de cores verificado
+- `aria-live="polite"` no formulário
 
 ---
 
