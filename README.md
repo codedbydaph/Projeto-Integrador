@@ -1,106 +1,108 @@
-# 🧱 Tela — Construção & Reforma
-
-Site institucional vendável para um pequeno negócio de **construção civil e reformas**.  
-Desenvolvido como parte do **Projeto Integrador**, com foco em planejar, prototipar, desenvolver, versionar, publicar e documentar um site estático voltado a um negócio real.
-
----
-
-## 👥 Dupla
-
-| Integrante | Função no Projeto |
-|-------------|------------------|
-| Daphine Coelho | Desenvolvedor Front-end / Prototipagem |
-| Antonio Zampieri | Desenvolvedor Front-end / Prototipagem |
+# 🧱 Tela — Construção & Reforma  
+Site institucional moderno, acessível e modularizado, desenvolvido como parte do **Projeto Integrador – Parte 2**.  
+O objetivo foi criar um site **vendável para um pequeno negócio real**, seguindo boas práticas de design, código, acessibilidade, responsividade e documentação.
 
 ---
 
-## 🎯 Tema, Objetivo e Público-Alvo
+# 👥 Equipe
 
-- **Tema:** Construção civil, reformas e manutenções residenciais e comerciais.  
-- **Negócio real:** Prestador de serviços locais da área de obras e reformas.  
-- **Objetivo do site:** Apresentar a empresa, divulgar os serviços, destacar diferenciais competitivos e facilitar o contato com clientes.  
-- **Público-alvo:** Proprietários de imóveis, síndicos e pequenos comerciantes que buscam serviços de reforma e construção confiáveis.
-
----
-
-## 💡 Potencial de Negócio
-
-O site atua como **vitrine digital** da empresa, transmitindo confiança e credibilidade.  
-Permite **contato direto via WhatsApp e formulário**, fortalecendo a presença online e ampliando a captação de clientes.
+| Integrante | Função |
+|------------|--------|
+| **Daphine Milani** | Desenvolvimento Front-end • Prototipação • Documentação |
+| **Antonio Zampieri** | Desenvolvimento Front-end • Interatividade JS • Modularização |
 
 ---
 
-## 🖌️ Planejamento Visual e Protótipo
+# 🎯 Tema, Objetivo e Público-Alvo
 
-📎 **Link do protótipo no Figma:**  
-👉 [Figma — Tela Construção & Reforma](https://www.figma.com/design/n7V3Uc3CAQV7Laz6UD9VEk/Tela?node-id=5-3&t=Isc9Mr3oXiCeOYMm-1)
-
----
-
-## 🎨 Justificativas de Design
-
-### **Cores**
-- **Verde Floresta (#096b16):** Confiança e sustentabilidade  
-- **Verde Musgo (#0d6944):** Seriedade e estabilidade  
-- **Verde Claro (#10bc2a):** Energia e vitalidade  
-- **Branco e Cinza Neutro:** Clareza e equilíbrio  
-
-> A paleta reforça valores como segurança, crescimento e profissionalismo — essenciais para o setor da construção civil.
-
-### **Tipografia**
-- **Poppins (Google Fonts):** Moderna e legível  
-  - Títulos: peso 600  
-  - Textos: peso 400–500
-
-### **Layout e Componentes**
-- Estrutura em **grid de duas colunas** (imagem + texto)  
-- **Navbar** fixa com sombra  
-- **Cards** com sombra e bordas arredondadas  
-- **Botões verdes** para destaque das ações principais  
-- **Espaçamento amplo e hierarquia visual clara**
+- **Tema:** Serviços de construção civil, reformas e manutenções.  
+- **Objetivo:** Criar a presença digital de um pequeno negócio, oferecendo informações claras sobre serviços, diferenciais e canais de contato.  
+- **Público-alvo:** Proprietários de imóveis, síndicos, comerciantes e clientes que buscam serviços confiáveis de reforma.  
+- **Entrega esperada:** um site funcional, modularizado, acessível, responsivo e documentado.
 
 ---
 
-## 🧱 Desenvolvimento do Projeto
+# 📝 Figma — Protótipo  
+🔗 **https://www.figma.com/design/n7V3Uc3CAQV7Laz6UD9VEk/Tela**
+
+Inclui:
+- Layout completo de todas as páginas  
+- Identidade visual  
+- Paleta de cores  
+- Estrutura de navegação  
+- Hierarquia dos componentes  
+
+---
+
+# 🔍 Diagnóstico Inicial (Parte 1 → Parte 2)
+
+Antes de iniciar a Parte 2, foi feita uma revisão completa do projeto da Parte 1.  
+As principais observações foram registradas e guiadas para melhorias:
+
+### ✔ Pontos que já funcionavam:
+- Layout consistente e esteticamente agradável  
+- Carrossel funcional na página inicial  
+- Estrutura HTML semântica  
+- Conteúdo claro e orientado ao negócio  
+
+### ❗ Pontos que precisavam melhorar:
+- **Repetição de header e footer** em todas as páginas  
+- Ausência de modularização  
+- Layout quebrando em telas pequenas  
+- Formulário sem validação e sem labels  
+- Falta de foco visível para navegação por teclado  
+- Ausência de integrações externas úteis para o negócio  
+
+Esses itens foram **corrigidos totalmente na Parte 2** (documentados abaixo).
+
+---
+
+# 🧱 Parte 2 — Evoluções Implementadas
+
+## ✔ 1. Modularização de Componentes
+Criamos uma pasta `/componentes` contendo:
+<pre>
+componentes/
+├── header.html
+└── footer.html
+</pre>
+Esses arquivos são carregados dinamicamente em todas as páginas utilizando o arquivo js/componentes.js, que faz a inclusão automática dos componentes na estrutura HTML.
+
+### Por que essa abordagem foi escolhida?
+- Evita repetição de código
+- Facilita manutenção e atualização
+- Padroniza e centraliza header e footer
+- Segue boas práticas de projetos web
+- Cumpre o requisito central da Parte 2 do Projeto Integrador
+  
+## ✔ Desenvolvimento do Projeto
 
 Desenvolvido com **HTML5**, **CSS3** e **JavaScript**, seguindo boas práticas de semântica, responsividade e usabilidade.  
 O JavaScript foi integrado para trazer **interatividade real** ao projeto.
 
 ---
 
-## ⚙️ Interações JavaScript (Desafios Aplicados)
-
-### 🖱️ **Desafio 1 — Clique**
-**Botão:** “Solicite seu orçamento” (carrossel da home)  
-**Função:** Ao clicar, o usuário é direcionado suavemente até a seção de contato. 
-
-### 🖼️ **Desafio 3 — Reação ao movimento do mouse**
-**Imagens:** Seção Sobre a empresa  
-**Função:** As imagens reagem ao movimento do mouse, subindo 5px.
-
----
-
-### 📂 Estrutura do projeto
+### 📂 Estrutura final do projeto
 <pre>
 SiteDaTela/
-├── index.html         # Página inicial (carrossel e botão com JS)
-├── sobre.html         # Página "Sobre a empresa" (imagens com animação JS)
-├── contato.html       # Página de contato e formulário
+├── index.html
+├── sobre.html
+├── contato.html
+│
+├── componentes/
+│   ├── header.html
+│   └── footer.html
 │
 ├── css/
-│   └── style.css      # Estilos e layout 
+│   ├── style.css
+│   └── responsive.css
 │
 ├── js/
-│   └── script.js      # Interações JavaScript
+│   ├── componentes.js
+│   └── script.js
 │
 ├── img/
-│   ├── servico1.png
-│   ├── servico2.png
-│   ├── servico3.png
-│   ├── sobre1.png
-│   └── sobre2.png
-│
-└── README.md          # Documentação do projeto
+└── README.md
 </pre>
 
 ### Tecnologias Utilizadas
@@ -133,15 +135,7 @@ SiteDaTela/
 | Adição de JavaScript | Interatividade (Desafios 1 e 3) | 26/10 |
 | Versionamento no GitHub | Controle de versões e commits | 27/10 |
 | Publicação no GitHub Pages | Deploy final do site | 27/10 |
-
----
-
-## 📐 Justificativas Técnicas
-
-- Uso de **CSS Grid e Flexbox** para layout responsivo.  
-- Imagens com `object-fit: cover` para proporções consistentes.  
-- Estrutura HTML5 semântica melhora **SEO** e **acessibilidade**.   
-
+  
 ---
 
 ## 🧾 Decisões de Design (Resumo)
