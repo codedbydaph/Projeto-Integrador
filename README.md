@@ -1,106 +1,147 @@
-# 🧱 Tela — Construção & Reforma
-
-Site institucional vendável para um pequeno negócio de **construção civil e reformas**.  
-Desenvolvido como parte do **Projeto Integrador**, com foco em planejar, prototipar, desenvolver, versionar, publicar e documentar um site estático voltado a um negócio real.
-
----
-
-## 👥 Dupla
-
-| Integrante | Função no Projeto |
-|-------------|------------------|
-| Daphine Coelho | Desenvolvedor Front-end / Prototipagem |
-| Antonio Zampieri | Desenvolvedor Front-end / Prototipagem |
+# 🧱 Tela — Construção & Reforma  
+Site institucional moderno, acessível e modularizado, desenvolvido como parte do **Projeto Integrador – Parte 2**.  
+O objetivo foi criar um site **vendável para um pequeno negócio real**, seguindo boas práticas de design, código, acessibilidade, responsividade e documentação.
 
 ---
 
-## 🎯 Tema, Objetivo e Público-Alvo
+# 👥 Equipe
 
-- **Tema:** Construção civil, reformas e manutenções residenciais e comerciais.  
-- **Negócio real:** Prestador de serviços locais da área de obras e reformas.  
-- **Objetivo do site:** Apresentar a empresa, divulgar os serviços, destacar diferenciais competitivos e facilitar o contato com clientes.  
-- **Público-alvo:** Proprietários de imóveis, síndicos e pequenos comerciantes que buscam serviços de reforma e construção confiáveis.
-
----
-
-## 💡 Potencial de Negócio
-
-O site atua como **vitrine digital** da empresa, transmitindo confiança e credibilidade.  
-Permite **contato direto via WhatsApp e formulário**, fortalecendo a presença online e ampliando a captação de clientes.
+| Integrante | Função |
+|------------|--------|
+| **Daphine Milani** | Desenvolvimento Front-end • Prototipação • Documentação |
+| **Antonio Zampieri** | Desenvolvimento Front-end • Interatividade JS • Modularização |
 
 ---
 
-## 🖌️ Planejamento Visual e Protótipo
+# 🎯 Tema, Objetivo e Público-Alvo
 
-📎 **Link do protótipo no Figma:**  
-👉 [Figma — Tela Construção & Reforma](https://www.figma.com/design/n7V3Uc3CAQV7Laz6UD9VEk/Tela?node-id=5-3&t=Isc9Mr3oXiCeOYMm-1)
-
----
-
-## 🎨 Justificativas de Design
-
-### **Cores**
-- **Verde Floresta (#096b16):** Confiança e sustentabilidade  
-- **Verde Musgo (#0d6944):** Seriedade e estabilidade  
-- **Verde Claro (#10bc2a):** Energia e vitalidade  
-- **Branco e Cinza Neutro:** Clareza e equilíbrio  
-
-> A paleta reforça valores como segurança, crescimento e profissionalismo — essenciais para o setor da construção civil.
-
-### **Tipografia**
-- **Poppins (Google Fonts):** Moderna e legível  
-  - Títulos: peso 600  
-  - Textos: peso 400–500
-
-### **Layout e Componentes**
-- Estrutura em **grid de duas colunas** (imagem + texto)  
-- **Navbar** fixa com sombra  
-- **Cards** com sombra e bordas arredondadas  
-- **Botões verdes** para destaque das ações principais  
-- **Espaçamento amplo e hierarquia visual clara**
+- **Tema:** Serviços de construção civil, reformas e manutenções.  
+- **Objetivo:** Criar a presença digital de um pequeno negócio, oferecendo informações claras sobre serviços, diferenciais e canais de contato.  
+- **Público-alvo:** Proprietários de imóveis, síndicos, comerciantes e clientes que buscam serviços confiáveis de reforma.  
+- **Entrega esperada:** um site funcional, modularizado, acessível, responsivo e documentado.
 
 ---
 
-## 🧱 Desenvolvimento do Projeto
+# 📝 Figma — Protótipo  
+🔗 **https://www.figma.com/design/n7V3Uc3CAQV7Laz6UD9VEk/Tela**
 
-Desenvolvido com **HTML5**, **CSS3** e **JavaScript**, seguindo boas práticas de semântica, responsividade e usabilidade.  
-O JavaScript foi integrado para trazer **interatividade real** ao projeto.
-
----
-
-## ⚙️ Interações JavaScript (Desafios Aplicados)
-
-### 🖱️ **Desafio 1 — Clique**
-**Botão:** “Solicite seu orçamento” (carrossel da home)  
-**Função:** Ao clicar, o usuário é direcionado suavemente até a seção de contato. 
-
-### 🖼️ **Desafio 3 — Reação ao movimento do mouse**
-**Imagens:** Seção Sobre a empresa  
-**Função:** As imagens reagem ao movimento do mouse, subindo 5px.
+Inclui:
+- Layout completo de todas as páginas  
+- Identidade visual  
+- Paleta de cores  
+- Estrutura de navegação  
+- Hierarquia dos componentes  
 
 ---
 
-### 📂 Estrutura do projeto
+# 🔍 Diagnóstico Inicial (Parte 1 → Parte 2)
+
+Antes de iniciar a Parte 2, foi feita uma revisão completa do projeto da Parte 1.  
+As principais observações foram registradas e guiadas para melhorias:
+
+### ✔ Pontos que já funcionavam:
+- Layout consistente e esteticamente agradável  
+- Carrossel funcional na página inicial  
+- Estrutura HTML semântica  
+- Conteúdo claro e orientado ao negócio  
+
+### ❗ Pontos que precisavam melhorar:
+- **Repetição de header e footer** em todas as páginas  
+- Ausência de modularização  
+- Layout quebrando em telas pequenas  
+- Formulário sem validação e sem labels  
+- Falta de foco visível para navegação por teclado  
+- Ausência de integrações externas úteis para o negócio  
+
+Esses itens foram **corrigidos totalmente na Parte 2** (documentados abaixo).
+
+---
+
+# 🧱 Parte 2 — Evoluções Implementadas
+
+## ✔ 1. Modularização de Componentes
+Criamos uma pasta `/componentes` contendo:
+<pre>
+componentes/
+├── header.html
+└── footer.html
+</pre>
+Esses arquivos são carregados dinamicamente em todas as páginas utilizando o arquivo js/componentes.js, que faz a inclusão automática dos componentes na estrutura HTML.
+
+### Por que essa abordagem foi escolhida?
+- Evita repetição de código
+- Facilita manutenção e atualização
+- Padroniza e centraliza header e footer
+- Segue boas práticas de projetos web
+- Cumpre o requisito central da Parte 2 do Projeto Integrador
+
+## 🌐 2. Acessibilidade
+Melhorias aplicadas com base no checklist da Parte 2:
+- Uso de HTML semântico (`header`, `nav`, `main`, `section`, `article`, `footer`)
+- Apenas um `<h1>` por página, com hierarquia adequada entre títulos
+- Textos alternativos `alt` em imagens relevantes
+- Campos do formulário com `required`
+- Mensagem de envio usando `aria-live="polite"`
+- Foco visível em links e botões para navegação por teclado
+- Navegação funcional com **TAB / Shift+TAB**
+- Contraste revisado para garantir boa legibilidade
+Essas ações tornam o site mais inclusivo e aderente às boas práticas de acessibilidade.
+
+## 📱 3. Responsividade
+O arquivo `responsive.css` foi criado para garantir o comportamento adequado do site em diferentes dispositivos.
+### Melhorias realizadas:
+- Abordagem mobile-first
+- Ajustes para 375px, 768px, 1024px e 1280px
+- Navbar reorganizada e corrigida para evitar quebra de layout
+- Cards reorganizados em layout de coluna no mobile
+- Imagens fluidas (max-width: 100%)
+- Correção de overflow horizontal
+- Seções reorganizadas verticalmente em telas menores
+O site agora se adapta corretamente a celulares, tablets e desktops.
+
+## ⚙️ 4. Interatividade com JavaScript
+Foram implementadas interações usando **JavaScript Vanilla**:
+- Carrossel automático na página inicial
+- Botão “Solicite seu orçamento” levando ao contato
+- Animação nas imagens da página Sobre (efeito de movimento)
+- Mensagem de confirmação ao enviar o formulário
+- Carregamento dinâmico de header e footer com fetch()
+
+Os scripts foram organizados em:
+- `script.js` → interações gerais
+- `componentes.js` → modularização
+  
+---
+
+### 📂 Estrutura final do projeto
 <pre>
 SiteDaTela/
-├── index.html         # Página inicial (carrossel e botão com JS)
-├── sobre.html         # Página "Sobre a empresa" (imagens com animação JS)
-├── contato.html       # Página de contato e formulário
+├── index.html
+├── sobre.html
+├── contato.html
+│
+├── componentes/
+│   ├── header.html
+│   └── footer.html
 │
 ├── css/
-│   └── style.css      # Estilos e layout 
+│   ├── style.css
+│   ├── style.min.css
+│   └── responsive.css
 │
 ├── js/
-│   └── script.js      # Interações JavaScript
+│   ├── script.js
+│   ├── componentes.js
+│   └── main.min.js
+│
+├── docs/
+│   ├── testes-navegadores/
+│   └── testes-responsividade/
 │
 ├── img/
-│   ├── servico1.png
-│   ├── servico2.png
-│   ├── servico3.png
-│   ├── sobre1.png
-│   └── sobre2.png
 │
-└── README.md          # Documentação do projeto
+├── avaliacao-dupla-X.md
+└── README.md
 </pre>
 
 ### Tecnologias Utilizadas
@@ -112,14 +153,78 @@ SiteDaTela/
 
 ---
 
-## 🌐 Versionamento e Publicação
+## 🚀 Versionamento e Publicação
 
 1. Projeto inicializado com **Git**  
 2. Commit inicial com estrutura HTML e CSS  
 3. Repositório criado e conectado ao GitHub  
-4. Publicado via **GitHub Pages**  
-5. Link do site:  
+4. Modularização, responsividade e acessibilidade aplicadas
+5. Deploy no **GitHub Pages**
+6. Link do site:  
    🔗 https://codedbydaph.github.io/Projeto-Integrador
+
+---
+
+# 🧪 Testes Realizados
+
+Para garantir que o site funcionasse corretamente em diferentes situações, realizamos uma série de testes envolvendo navegadores, dispositivos, tamanhos de tela e interações. Abaixo está o registro completo.
+
+## 🌐 Navegadores testados
+
+| Navegador | Versão | Resultado |
+|----------|--------|-----------|
+| **Google Chrome** | 119+ | ✔ Funcionando normalmente |
+| **Microsoft Edge** | 118+ | ✔ Funcionando normalmente |
+| **Safari (iOS)** | iOS 15+ | ✔ Comportamento adequado, ajustes aplicados no carrossel |
+| **Opera** | 103+ | ✔ Funcional |
+
+## 📱 Dispositivos e resoluções testadas
+
+### **💻 Desktop**
+- 1920×1080 (Full HD)
+- 1366×768 (notebook)
+- 1440×900
+- 1280×720
+
+### **📱 Tablets**
+- iPad 10″ – 768×1024
+- Samsung Tab A7 – 800×1280
+
+### **📱 Smartphones**
+- **iPhone 12 – 390×844**
+- **iPhone SE – 375×667**
+- **Samsung Galaxy S20 – 360×800**
+- **Moto G – 412×915**
+
+## 🐛 Problemas encontrados e soluções aplicadas
+
+### **1. Carrossel ocupando altura excessiva no iPhone 12**
+**Problema:** a imagem do carrossel ficava muito grande em telas pequenas.  
+**Solução:** criado um *breakpoint* exclusivo para telas até 430px ajustando altura do carrossel, imagens, indicadores e overflow.
+
+### **2. Cards de feedback desalinhados no mobile**
+**Problema:** layout quebrava por causa de larguras fixas.  
+**Solução:** flex-direction em coluna, largura máxima, object-fit corrigido.
+
+### **3. Menu desalinhado no mobile**
+**Problema:** espaçamento irregular.  
+**Solução:** ajustes de padding, gaps e mobile-first.
+
+### **4. Overflow horizontal**
+**Problema:** elementos ultrapassavam largura da tela.  
+**Solução:** max-width revisado, paddings corrigidos e seções reorganizadas.
+
+## ⚠️ Limitações conhecidas
+- Carrossel sem swipe no mobile.
+- Pequeno atraso no carregamento do header via fetch().
+- Muitas imagens podem afetar o carregamento em redes lentas.
+
+## 📸 Evidências dos testes
+As evidências estão organizadas em:
+
+- `docs/teste-responsividade/Desktop HD`
+- `docs/teste-responsividade/Ipad Pro`
+- `docs/teste-responsividade/iPhone12 Pro`
 
 ---
 
@@ -130,18 +235,10 @@ SiteDaTela/
 | Definição do tema e escopo | Escolha do negócio e objetivos | 08/10 |
 | Criação do protótipo no Figma | Estrutura visual e justificativas | 08/10 |
 | Desenvolvimento HTML/CSS | Estruturação e estilização | 12/10 |
-| Adição de JavaScript | Interatividade (Desafios 1 e 3) | 26/10 |
-| Versionamento no GitHub | Controle de versões e commits | 27/10 |
-| Publicação no GitHub Pages | Deploy final do site | 27/10 |
-
----
-
-## 📐 Justificativas Técnicas
-
-- Uso de **CSS Grid e Flexbox** para layout responsivo.  
-- Imagens com `object-fit: cover` para proporções consistentes.  
-- Estrutura HTML5 semântica melhora **SEO** e **acessibilidade**.   
-
+| Interatividade JS | Carrossel e animações | 26/10 |
+| Modularização | Inclusão dinâmica dos componentes | 15/11 |
+| Publicação no GitHub Pages | Deploy final do site | 16/11 |
+  
 ---
 
 ## 🧾 Decisões de Design (Resumo)
@@ -158,10 +255,12 @@ SiteDaTela/
 
 ## ♿ Acessibilidade
 
-- Imagens com `alt` descritivo  
+- Imagens com `alt` descritivo
+- Navegação por teclado
 - Hierarquia correta de títulos (`h1`, `h2`, `h3`)  
 - Foco visível em links e botões  
-- Contraste de cores verificado  
+- Contraste de cores verificado
+- `aria-live="polite"` no formulário
 
 ---
 
