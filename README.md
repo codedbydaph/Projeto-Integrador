@@ -125,10 +125,12 @@ SiteDaTela/
 │   └── footer.html
 │
 ├── css/
+│   ├── style.min.css
 │   ├── style.css
 │   └── responsive.css
 │
 ├── js/
+│   ├── main.min.js
 │   ├── componentes.js
 │   └── script.js
 │
