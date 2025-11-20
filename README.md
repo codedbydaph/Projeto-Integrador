@@ -125,16 +125,22 @@ SiteDaTela/
 │   └── footer.html
 │
 ├── css/
-│   ├── style.min.css
 │   ├── style.css
+│   ├── style.min.css
 │   └── responsive.css
 │
 ├── js/
-│   ├── main.min.js
+│   ├── script.js
 │   ├── componentes.js
-│   └── script.js
+│   └── main.min.js
+│
+├── docs/
+│   ├── testes-navegadores/
+│   └── testes-responsividade/
 │
 ├── img/
+│
+├── avaliacao-dupla-X.md
 └── README.md
 </pre>
 
@@ -156,6 +162,69 @@ SiteDaTela/
 5. Deploy no **GitHub Pages**
 6. Link do site:  
    🔗 https://codedbydaph.github.io/Projeto-Integrador
+
+---
+
+# 🧪 Testes Realizados
+
+Para garantir que o site funcionasse corretamente em diferentes situações, realizamos uma série de testes envolvendo navegadores, dispositivos, tamanhos de tela e interações. Abaixo está o registro completo.
+
+## 🌐 Navegadores testados
+
+| Navegador | Versão | Resultado |
+|----------|--------|-----------|
+| **Google Chrome** | 119+ | ✔ Funcionando normalmente |
+| **Microsoft Edge** | 118+ | ✔ Funcionando normalmente |
+| **Safari (iOS)** | iOS 15+ | ✔ Comportamento adequado, ajustes aplicados no carrossel |
+| **Opera** | 103+ | ✔ Funcional |
+
+## 📱 Dispositivos e resoluções testadas
+
+### **💻 Desktop**
+- 1920×1080 (Full HD)
+- 1366×768 (notebook)
+- 1440×900
+- 1280×720
+
+### **📱 Tablets**
+- iPad 10″ – 768×1024
+- Samsung Tab A7 – 800×1280
+
+### **📱 Smartphones**
+- **iPhone 12 – 390×844**
+- **iPhone SE – 375×667**
+- **Samsung Galaxy S20 – 360×800**
+- **Moto G – 412×915**
+
+## 🐛 Problemas encontrados e soluções aplicadas
+
+### **1. Carrossel ocupando altura excessiva no iPhone 12**
+**Problema:** a imagem do carrossel ficava muito grande em telas pequenas.  
+**Solução:** criado um *breakpoint* exclusivo para telas até 430px ajustando altura do carrossel, imagens, indicadores e overflow.
+
+### **2. Cards de feedback desalinhados no mobile**
+**Problema:** layout quebrava por causa de larguras fixas.  
+**Solução:** flex-direction em coluna, largura máxima, object-fit corrigido.
+
+### **3. Menu desalinhado no mobile**
+**Problema:** espaçamento irregular.  
+**Solução:** ajustes de padding, gaps e mobile-first.
+
+### **4. Overflow horizontal**
+**Problema:** elementos ultrapassavam largura da tela.  
+**Solução:** max-width revisado, paddings corrigidos e seções reorganizadas.
+
+## ⚠️ Limitações conhecidas
+- Carrossel sem swipe no mobile.
+- Pequeno atraso no carregamento do header via fetch().
+- Muitas imagens podem afetar o carregamento em redes lentas.
+
+## 📸 Evidências dos testes
+As evidências estão organizadas em:
+
+- `docs/teste-responsividade/Desktop HD`
+- `docs/teste-responsividade/Ipad Pro`
+- `docs/teste-responsividade/iPhone12 Pro`
 
 ---
 
