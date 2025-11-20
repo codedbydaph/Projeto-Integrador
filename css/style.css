@@ -505,7 +505,7 @@ button:hover{
 /* footerzada */
 footer{
     background-color: var(--verdefloresta);
-    height: 52vh;
+    height: 60vh;
     width: 100%;
 }
 .f-all{
@@ -514,6 +514,7 @@ footer{
     justify-content: center;
     align-items: center;
     color: var(--branco);
+    text-align: justify;
 }
 
 #footer_content {
