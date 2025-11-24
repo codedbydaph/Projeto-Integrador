@@ -254,14 +254,21 @@ As evidências estão organizadas em:
 
 ---
 
-## ♿ Acessibilidade
+## 🐢 Próximos Passos
 
-- Imagens com `alt` descritivo
-- Navegação por teclado
-- Hierarquia correta de títulos (`h1`, `h2`, `h3`)  
-- Foco visível em links e botões  
-- Contraste de cores verificado
-- `aria-live="polite"` no formulário
+### 🔧 Melhorias Futuras  
+- [ ] Implementar swipe no carrossel mobile  
+- [ ] Melhorar acessibilidade (WCAG 2.1)  
+- [ ] Otimizar animações e desempenho  
+- [ ] Criar versão futura usando React  
+
+### 📚 Aprendizados a Aprofundar  
+- Acessibilidade e usabilidade  
+- JavaScript avançado  
+- APIs e integrações externas  
+
+### 🏫 Aplicação em Projetos Futuros  
+Usar modularização, responsividade aprimorada e boas práticas de acessibilidade em novos trabalhos da faculdade e projetos web.
 
 ---
 
