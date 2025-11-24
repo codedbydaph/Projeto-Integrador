@@ -112,6 +112,7 @@ Os scripts foram organizados em:
 - `componentes.js` → modularização
   
 ---
+# 👨🏻‍💻 Parte 3 — Finalização
 
 ### 📂 Estrutura final do projeto
 <pre>
