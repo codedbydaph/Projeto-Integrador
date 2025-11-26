@@ -137,8 +137,8 @@ SiteDaTela/
 │
 ├── docs/
 │   ├── avaliacoes-enviadas
-│   └── avaliacoes-recebidas
-│   └── testes-navegadores
+│   ├── avaliacoes-recebidas
+│   ├── testes-navegadores
 │   └── testes-responsividade
 │
 ├── img/
