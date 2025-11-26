@@ -286,6 +286,9 @@ Usar modularização, responsividade aprimorada e boas práticas de acessibilida
 -  Sim, o site agregaria valor ao pequeno negócio ao transmitir credibilidade e facilitar o contato do cliente. Eu diria ao dono que o site fortalece a presença digital e ajuda a vender mais serviços com clareza e profissionalismo.
 Usaria no portfólio porque demonstra design consistente, modularização, responsividade e boas práticas reais de desenvolvimento.
 
+### Link da Reflexão Individual:  
+   🔗 https://docs.google.com/document/d/1HP5hXj46BNXL8MztEwCvqUKImZzWc0ShFioejnMYcpc/edit?usp=sharing
+
 ---
 ## 🧭 Conclusão
 
