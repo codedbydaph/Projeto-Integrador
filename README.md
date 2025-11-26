@@ -136,8 +136,10 @@ SiteDaTela/
 │   └── main.min.js
 │
 ├── docs/
-│   ├── testes-navegadores/
-│   └── testes-responsividade/
+│   ├── avaliacoes-enviadas
+│   └── avaliacoes-recebidas
+│   └── testes-navegadores
+│   └── testes-responsividade
 │
 ├── img/
 │
