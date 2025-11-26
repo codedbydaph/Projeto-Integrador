@@ -264,6 +264,19 @@ As evidências estão organizadas em:
 
 ---
 
+## 👊 Reflexão em Dupla 
+
+### **Evolução do Projeto**
+- O projeto foi evoluindo constantemente saindo de um rascunho Wireframe no Figma para um site totalmente funcional atendendo a nossa propoista incial. Consideramos a maior mudança quando aplicamos JavaScript em nossos Banners transformando eles em carrossel.
+
+### **FeedBack Recebidos**
+- Aprendemos a importância de melhorar acessibilidade, navegação mobile e microinterações. Os feedbacks mais úteis foram sobre labels no formulário, foco visível e menu para mobile. Vamos aplicar essas sugestões nas próximas versões, priorizando acessibilidade e experiência mobile.
+
+### **Relevância para o Negócio**
+-  Sim, o site agregaria valor ao pequeno negócio ao transmitir credibilidade e facilitar o contato do cliente. Eu diria ao dono que o site fortalece a presença digital e ajuda a vender mais serviços com clareza e profissionalismo.
+Usaria no portfólio porque demonstra design consistente, modularização, responsividade e boas práticas reais de desenvolvimento.
+
+---
 ## 🧭 Conclusão
 
 O projeto **Tela — Construção & Reforma** cumpre os requisitos da primeira etapa do Projeto Integrador:  
